@@ -100,8 +100,6 @@ class Stack:
             else:
                 print("Top Most Element Removed : {}".format(removedNode))
 
-            # Driver program to test above class
-
 
 stack = Stack()
 
