@@ -113,5 +113,3 @@ stack.pop()
 stack.getMax()
 stack.pop()
 stack.peek()
-
-# This code is contributed by Blinkii
