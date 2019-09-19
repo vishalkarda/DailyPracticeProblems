@@ -12,6 +12,8 @@ https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/
 
 https://www.quora.com/What-is-a-good-rich-text-editor-for-reactjs
 
+https://stackoverflow.com/questions/55831213/uploading-multiple-images-with-react
+
 text editor in react
 
 storing multiple values of a react dropdown in a state
