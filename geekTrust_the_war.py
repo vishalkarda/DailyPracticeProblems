@@ -1,5 +1,16 @@
 import math
 
+
+class War:
+    def __init__(self):
+        self.batlions = ['horse', 'elephant', 'tanks', 'guns']
+        self.lengaburu_army = dict(horse=100, elephant=50, tanks=10, guns=5)
+        self.deployed_len_army = dict(horse=0, elephant=0, tanks=0, guns=0)
+        self.fal_army = dict(horse=300, elephant=200, tanks=40, guns=20)
+        deployed_fal_army = dict(horse=0, elephant=0, tanks=0, guns=0)
+        diff = dict(horse=0, elephant=0, tanks=0, guns=0)
+
+
 print('Enter the input')
 data = input()
 statement = data.split(' ')

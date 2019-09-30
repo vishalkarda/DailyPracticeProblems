@@ -1,5 +1,5 @@
 """
-You are given two singly linked lists. The lists intersect at some node. Find, and return the node. Note: the lists are non-cyclical.
+You are given two singly linked lists. The lists intersect at some node.Find, and return the node. Note: the lists are non-cyclical.
 
 Example:
 
