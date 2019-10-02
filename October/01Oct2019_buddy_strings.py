@@ -33,8 +33,7 @@ class Solution:
             return False
 
         elif len(A) == 2:
-            temp = A[1]+A[0]
-            return temp == B
+            return B[0] == A[1] and B[1] == A[0]
 
         else:
             for i in range(0, len(A)):
