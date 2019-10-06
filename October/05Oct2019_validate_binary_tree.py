@@ -28,8 +28,9 @@ def is_bst(root):
         if root.right.key >= root.key:
             return is_bst(root.right)
         else:
-            return False;
-    return True;
+            return False
+
+    return True
 
 
 a = TreeNode(5)
