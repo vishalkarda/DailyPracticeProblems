@@ -44,7 +44,7 @@ def find_range(nums):
             break
         i -= 1
 
-    return s, e-1
+    return s, e
 
 
 print(find_range([1, 7, 9, 5, 7, 8, 10]))
