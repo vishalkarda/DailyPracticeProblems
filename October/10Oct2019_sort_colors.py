@@ -16,31 +16,28 @@ Output: [0,0,1,1,2,2]
 
 class Solution:
     def sortcolors(self, data):
-        res = []
-        zero_flag = False
-        one_flag = False
-        two_flag = False
-        count_zero = 0
+        n = len(nums)
+        n0 = 0
+        n1 = 1
+        n2 = 2
+        for i in nums:
+            if i == 0:
+                n0 += 1
+            elif i == 1:
+                n1 += 1
+            elif i == 2:
+                n2 += 1
 
-        for i in range(len(data)):
-            if data[i] == 0 and zero_flag:
-                res.insert(1, data[i])
-                count_zero += 1
-            if data[i] == 1 and one_flag:
-                res.insert(2, data[i])
-            if data[i] == 2 and two_flag:
-                res.insert(len(res)-1, data[i])
-            if data[i] == 0 and not zero_flag:
-                res.insert(0, data[i])
-                zero_flag = True
-            if data[i] == 1 and not one_flag:
-                res.insert(1, data[i])
-                one_flag = True
-            if data[i] == 2 and not two_flag:
-                res.insert(2, data[i])
-                two_flag = True
-            print(f'new list {i} : {res}')
-        return res
+        n1 = n0 + n1
+        n2 = n1 + n2
+
+        for i in range(0, n):
+            if i < n0:
+                nums[i] = 0
+            elif i >= n0 and i < n1:
+                nums[i] = 1
+            elif i >= n1 and i < n2:
+                nums[i] = 2
 
 
 nums = [0, 1, 2, 2, 1, 1, 2, 2, 0, 0, 0, 0, 2, 1]
