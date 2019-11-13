@@ -49,9 +49,3 @@ if __name__ == "__main__":
     number = "".join([str(i) for i in sorted_array])
     print(number)
 
-# def largest_num(nums):
-#     pass
-#
-#
-# print(largest_num([17, 7, 2, 45, 72]))
-# # 77245217
