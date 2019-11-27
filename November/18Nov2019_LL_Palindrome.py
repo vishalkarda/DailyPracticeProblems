@@ -1,0 +1,42 @@
+"""
+You are given a doubly linked list. Determine if it is a palindrome.
+
+Can you do this for a singly linked list?
+"""
+
+
+class Node(object):
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+        self.prev = None
+
+
+def is_palindrome(head):
+
+    if head is None:
+        return True
+
+    tail = head
+    while tail.next:
+        tail = tail.next
+
+    while head is not tail:
+        if head.val != tail.val:
+            return False
+        head = head.next
+        tail = tail.prev
+
+    return True
+
+
+node = Node('a')
+node.next = Node('b')
+node.next.prev = node
+node.next.next = Node('b')
+node.next.next.prev = node.next
+node.next.next.next = Node('a')
+node.next.next.next.prev = node.next.next
+
+print(is_palindrome(node))
+# True
